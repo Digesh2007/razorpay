@@ -1,0 +1,18 @@
+"use client";
+
+import { Bar, BarChart, CartesianGrid, Cell, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { formatINR } from "@/lib/utils";
+
+interface AnalyticsData {
+  recoveryOverTime: { day: string; rate: number }[];
+  revenueByDay: { day: string; recovered: number }[];
+  failureReasons: { name: string; value: number }[];
+}
+
+const colors = ["#b8f36b", "#fbbf24", "#fb7185", "#60a5fa"];
+const tooltipStyle = { backgroundColor: "#111a23", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, color: "#f8fafc" };
+
+export function AnalyticsCharts({ data }: { data: AnalyticsData }) {
+  return <div className="grid gap-6 lg:grid-cols-2"><Card><CardHeader><CardTitle className="text-base">Recovery rate over time</CardTitle></CardHeader><CardContent><div className="h-72"><ResponsiveContainer width="100%" height="100%"><LineChart data={data.recoveryOverTime} margin={{ top: 10, right: 12, left: -20, bottom: 0 }}><CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} /><XAxis dataKey="day" axisLine={false} tickLine={false} tick={{ fill: "#64748b", fontSize: 12 }} /><YAxis domain={[0, 100]} axisLine={false} tickLine={false} tick={{ fill: "#64748b", fontSize: 12 }} tickFormatter={(value) => `${value}%`} /><Tooltip contentStyle={tooltipStyle} formatter={(value) => [`${value}%`, "Recovery rate"]} /><Line type="monotone" dataKey="rate" stroke="#b8f36b" strokeWidth={3} dot={{ fill: "#b8f36b", strokeWidth: 0, r: 4 }} activeDot={{ r: 6 }} animationDuration={900} /></LineChart></ResponsiveContainer></div></CardContent></Card><Card><CardHeader><CardTitle className="text-base">Revenue recovered by day</CardTitle></CardHeader><CardContent><div className="h-72"><ResponsiveContainer width="100%" height="100%"><BarChart data={data.revenueByDay} margin={{ top: 10, right: 12, left: 8, bottom: 0 }}><CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} /><XAxis dataKey="day" axisLine={false} tickLine={false} tick={{ fill: "#64748b", fontSize: 12 }} /><YAxis axisLine={false} tickLine={false} tick={{ fill: "#64748b", fontSize: 12 }} tickFormatter={(value) => `₹${Number(value) >= 1000 ? `${Math.round(Number(value) / 1000)}k` : value}`} /><Tooltip contentStyle={tooltipStyle} formatter={(value) => [formatINR(Number(value)), "Recovered"]} /><Bar dataKey="recovered" fill="#60a5fa" radius={[5, 5, 0, 0]} animationDuration={900} /></BarChart></ResponsiveContainer></div></CardContent></Card><Card className="lg:col-span-2"><CardHeader><CardTitle className="text-base">Failure reasons breakdown</CardTitle></CardHeader><CardContent><div className="grid items-center gap-8 md:grid-cols-[1fr_220px]"><div className="h-72"><ResponsiveContainer width="100%" height="100%"><PieChart><Tooltip contentStyle={tooltipStyle} formatter={(value) => [value, "Transactions"]} /><Pie data={data.failureReasons} dataKey="value" nameKey="name" innerRadius={72} outerRadius={105} paddingAngle={3} stroke="none" animationDuration={900}>{data.failureReasons.map((entry, index) => <Cell key={entry.name} fill={colors[index % colors.length]} />)}</Pie></PieChart></ResponsiveContainer></div><div className="space-y-4">{data.failureReasons.map((entry, index) => <div key={entry.name} className="flex items-center justify-between gap-4 text-sm"><span className="flex items-center gap-2 text-slate-400"><span className="size-2.5 rounded-full" style={{ backgroundColor: colors[index % colors.length] }} />{entry.name.replaceAll("_", " ")}</span><span className="font-medium text-white">{entry.value}</span></div>)}</div></div></CardContent></Card></div>;
+}
