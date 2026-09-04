@@ -1,0 +1,9 @@
+{
+  "total_transactions": 100,
+  "total_amount": 3386051.41,
+  "total_recovered": 1052566.23,
+  "recovery_rate": 31.085358801448322,
+  "decisions_made": {
+    "escalate_to_human": 100
+  }
+}

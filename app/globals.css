@@ -52,6 +52,10 @@ body {
   font-family: var(--font-geist-sans), sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

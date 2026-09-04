@@ -1,44 +1,89 @@
-# RecoverAI — Autonomous AI Agent for Payment Recovery
+# RecoverAI: Intelligent Payment Revenue Recovery
 
-**Track:** Razorpay AI Builder Buildathon 2026 · Track 3: AI Revenue Recovery  
-**Status:**  Production-Ready MVP (Demo Environment)
+> **Track:** AI Revenue Recovery (Razorpay Buildathon)
+>
+> RecoverAI is a production-ready payment recovery simulation. It compares a blind retry baseline with a context-aware Gemini agent that uses bounded actions, stopping rules, and an explainable audit trail.
 
-## 🚀 The Problem
-Merchants lose significant revenue due to failed payments (bank timeouts, UPI failures, abandoned checkouts). Most systems simply show "Payment Failed" and give up, leaving money on the table and frustrating customers.
+## The problem
 
-## 💡 The Solution
-**RecoverAI** is an autonomous AI agent that acts as a digital recovery specialist. Instead of just notifying merchants of failures, it:
-1. **Detects** the failure and analyzes the context (customer history, failure type).
-2. **Decides** the safest recovery strategy (Retry, Alternate Payment, Payment Link, or Stop).
-3. **Executes** the action based on configurable merchant guardrails.
-4. **Learns** from the outcome to improve future decisions.
+Merchants lose revenue when payments fail because of temporary gateway errors, payment-method issues, insufficient funds, and overdue invoices. Blind retries can waste attempts, frustrate customers, and create compliance risk.
 
-##  Key Features
-- **Merchant Dashboard:** Real-time overview of revenue at risk, recovery rates, and AI performance.
-- **AI Audit Trail:** Every decision made by the AI is explainable, timestamped, and transparent.
-- **Autonomous Simulator:** Watch the AI process 100 failed transactions in real-time and recover revenue autonomously.
-- **Deep Analytics:** Interactive charts showing recovery by failure reason, payment method, and time.
-- **Configurable Guardrails:** Merchants control max retries, confidence thresholds, and enabled strategies.
+## The solution
 
-## 🛠️ Tech Stack
-- **Frontend:** Next.js 14 (App Router), React, TypeScript, Tailwind CSS, shadcn/ui
-- **Backend:** Next.js Server Actions & API Routes
-- **Database:** Supabase (PostgreSQL)
-- **Visualization:** Recharts
-- **AI Architecture:** Server-side LLM integration with strict JSON schema validation and Zod
+RecoverAI evaluates each failed payment using:
 
-## 🏗️ Architecture
+- `attempts_so_far` to stop or escalate after three attempts.
+- `payment_method` and `failure_reason` to select an appropriate recovery path.
+- `is_b2b` and `days_overdue` to tailor communication.
+- A restricted action list so the model cannot invent operational actions.
+- A JSON audit trail containing every decision and simulated outcome.
+
+No real payment is retried. All outcomes are simulated locally.
+
+## Architecture
+
 ```text
-[Merchant Dashboard] 
-       ↓
-[Next.js Frontend] 
-       ↓
-[Server-Side API] ←→ [Supabase Database]
-       ↓
-[Recovery Engine] (Rules + AI Agent)
-       ↓
-[Action Execution] (Retry / Link / Stop)
-       ↓
-[Audit Trail & Analytics]
+Synthetic data -> Baseline retry engine -> Gemini recovery agent
+                         |                         |
+                         +---- comparison --------+
+                                   |
+                    audit trail and decision stats
 ```
 
+The web application in `app/` provides the RecoverAI dashboard, transaction views, simulator, analytics, and settings. Supabase schema and seed files are in `supabase/`.
+
+## Quick start
+
+From the project directory:
+
+```powershell
+pip install faker google-generativeai
+python generate_data.py
+python baseline_recovery.py
+```
+
+To run the Gemini agent, set your API key first:
+
+```powershell
+$env:GEMINI_API_KEY = "your_key_here"
+python ai_recovery_agent.py
+```
+
+The agent uses the `models/gemini-1.5-flash` model identifier. Never commit an API key.
+
+## Outputs
+
+- `synthetic_transactions.json`: 100 deterministic synthetic failed-payment records.
+- `baseline_results.json`: results from the non-AI blind-retry comparison.
+- `ai_audit_trail.json`: one explainable decision entry per transaction.
+- `ai_decision_stats.json`: recovery totals and action distribution.
+
+With the generated 100-record dataset, the baseline run produced a recovery rate of 14.62%. AI results vary because the simulated outcomes are probabilistic and require a Gemini API key.
+
+## Guardrails
+
+The model must choose exactly one pre-approved action. Invalid model output falls back to `escalate_to_human`. The prompt also enforces stopping rules, fraud handling, payment-method-aware recovery, and B2B communication rules. The audit output preserves the decision, reasoning, attempts, and outcome for review.
+
+## Key files
+
+- `generate_data.py`: creates realistic Indian payment failure scenarios.
+- `baseline_recovery.py`: implements the non-AI baseline.
+- `ai_recovery_agent.py`: runs Gemini decision-making and simulated outcomes.
+- `CHALLENGES.md`: records the implementation failures and resolutions.
+- `app/`: Next.js dashboard and user-facing simulator.
+- `supabase/`: database schema, seed data, and configuration.
+
+## Development
+
+```powershell
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000` after the Next.js development server starts.
+
+## Razorpay integration
+
+The server exposes `POST /api/payments/order` for creating Razorpay orders. Send an amount in rupees, a short receipt, and optional string notes. The response contains the order id and the public key id needed by Razorpay Checkout.
+
+Configure the credentials from `.env.example` in `.env.local`. Keep `RAZORPAY_KEY_SECRET` and `RAZORPAY_WEBHOOK_SECRET` server-side. Configure Razorpay to send `payment.captured` and `payment.failed` events to `/api/webhook/razorpay`; webhook signatures are verified before a matching transaction is updated by its `external_reference` note.

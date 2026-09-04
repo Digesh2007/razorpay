@@ -1,42 +1,15 @@
-import { ArrowRight, BrainCircuit, CircleCheck, Clock3, Link2, RotateCcw } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowRight, Menu, Moon, Sparkles, Sun, X } from "lucide-react";
+import { useState } from "react";
+import { AIThinkSplitScreen } from "@/components/landing/ai-think-split-screen";
+import { BentoFeatures } from "@/components/landing/bento-features";
+import { ROIComparison } from "@/components/landing/roi-comparison";
+import { SandboxControl } from "@/components/landing/sandbox-control";
 
 export default function Home() {
-  return (
-    <div className="min-h-screen overflow-hidden bg-[#0c1118] text-white">
-      <SiteHeader />
-      <main>
-        <section className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 lg:px-10 lg:pb-32 lg:pt-28">
-          <div className="pointer-events-none absolute -right-48 top-0 size-[32rem] rounded-full bg-[#b8f36b]/[0.07] blur-3xl" />
-          <div className="relative max-w-4xl">
-            <p className="mb-7 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#b8f36b]"><span className="size-1.5 rounded-full bg-[#b8f36b]" /> Autonomous recovery engine</p>
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-white sm:text-7xl lg:text-[6.25rem]">Turn failed payments into <span className="text-[#b8f36b]">recovered revenue.</span></h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-400">RecoverAI detects payment failures, chooses the smartest next move, and executes recovery workflows with a clear audit trail for every decision.</p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <a href="#overview" className="group inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-[#b8f36b] px-5 text-sm font-semibold text-[#0c1118] transition-transform hover:-translate-y-0.5">View the recovery engine <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" /></a>
-              <span className="inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-white/10 px-5 text-sm text-slate-400"><span className="size-2 rounded-full bg-[#b8f36b] shadow-[0_0_10px_#b8f36b]" /> Live simulation ready</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="overview" className="border-y border-white/10 bg-[#101720]">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[0.8fr_1.2fr] lg:px-10 lg:py-24">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">How it thinks</p>
-              <h2 className="mt-4 max-w-md text-3xl font-semibold tracking-tight text-white sm:text-4xl">One agent. Every recovery decision.</h2>
-              <p className="mt-5 max-w-md leading-7 text-slate-400">A failed payment is a signal, not a dead end. RecoverAI turns that signal into an action plan tailored to the customer and the failure.</p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2">
-              <div className="rounded-xl border border-white/10 bg-[#0c1118] p-6"><BrainCircuit className="text-[#b8f36b]" size={24} /><h3 className="mt-8 font-semibold">Understand context</h3><p className="mt-2 text-sm leading-6 text-slate-500">Classifies the failure and estimates the probability of recovery.</p></div>
-              <div className="rounded-xl border border-white/10 bg-[#0c1118] p-6"><RotateCcw className="text-[#b8f36b]" size={24} /><h3 className="mt-8 font-semibold">Choose the next move</h3><p className="mt-2 text-sm leading-6 text-slate-500">Selects retry, alternate payment, link, reminder, or stop.</p></div>
-              <div className="rounded-xl border border-white/10 bg-[#0c1118] p-6"><CircleCheck className="text-[#b8f36b]" size={24} /><h3 className="mt-8 font-semibold">Execute and monitor</h3><p className="mt-2 text-sm leading-6 text-slate-500">Runs the workflow and watches for a successful recovery.</p></div>
-              <div className="rounded-xl border border-white/10 bg-[#0c1118] p-6"><Clock3 className="text-[#b8f36b]" size={24} /><h3 className="mt-8 font-semibold">Explain every choice</h3><p className="mt-2 text-sm leading-6 text-slate-500">Keeps a human-readable audit trail from signal to outcome.</p></div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24"><div className="flex flex-col justify-between gap-8 rounded-2xl border border-[#b8f36b]/20 bg-[#16211a] p-8 sm:p-12 lg:flex-row lg:items-center"><div><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#b8f36b]">Built for trust</p><h2 className="mt-4 text-3xl font-semibold tracking-tight">Revenue recovery, without the black box.</h2><p className="mt-3 max-w-xl leading-7 text-slate-400">A test-only environment for demonstrating how intelligent payment operations can work.</p></div><div className="flex shrink-0 items-center gap-3 text-sm text-slate-300"><Link2 size={18} className="text-[#b8f36b]" /> 100% simulated actions</div></div></section>
-      </main>
-    </div>
-  );
+  const [dark, setDark] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  return <div className={dark ? "dark" : ""}><div className="min-h-screen overflow-hidden bg-[#fbfcff] text-zinc-950 transition-colors dark:bg-[#090c12] dark:text-zinc-100"><header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-[#fbfcff]/85 backdrop-blur-xl dark:border-zinc-800/80 dark:bg-[#090c12]/85"><div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10"><a href="#top" className="flex items-center gap-2.5 text-lg font-bold tracking-[-0.04em]"><span className="flex size-8 items-center justify-center rounded-[10px] bg-[#1950E4] text-white"><Sparkles size={16} /></span>RecoverAI</a><nav className={`${menuOpen ? "absolute left-0 top-full flex w-full flex-col border-b border-zinc-200 bg-white p-5 shadow-xl dark:border-zinc-800 dark:bg-zinc-950" : "hidden"} gap-6 text-sm font-medium text-zinc-500 md:static md:flex md:w-auto md:flex-row md:border-0 md:bg-transparent md:p-0 md:shadow-none`}><a href="#think" onClick={() => setMenuOpen(false)} className="hover:text-[#1950E4]">See the AI think</a><a href="#features" onClick={() => setMenuOpen(false)} className="hover:text-[#1950E4]">Features</a><a href="#roi" onClick={() => setMenuOpen(false)} className="hover:text-[#1950E4]">Impact</a><a href="#sandbox" onClick={() => setMenuOpen(false)} className="hover:text-[#1950E4]">Sandbox</a></nav><div className="flex items-center gap-2"><button aria-label={dark ? "Switch to light mode" : "Switch to dark mode"} onClick={() => setDark(!dark)} className="rounded-xl border border-zinc-200 p-2.5 text-zinc-500 transition hover:border-[#1950E4] hover:text-[#1950E4] dark:border-zinc-700 dark:text-zinc-400">{dark ? <Sun size={17} /> : <Moon size={17} />}</button><a href="#sandbox" className="hidden items-center gap-1.5 rounded-xl bg-[#1950E4] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#123fb9] sm:inline-flex">Try the demo <ArrowRight size={15} /></a><button aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)} className="rounded-xl p-2 md:hidden">{menuOpen ? <X size={20} /> : <Menu size={20} />}</button></div></div></header><main id="top"><section className="relative mx-auto max-w-7xl px-5 pb-24 pt-20 sm:px-8 sm:pt-28 lg:px-10 lg:pb-36 lg:pt-36"><div className="pointer-events-none absolute -right-40 top-0 size-[38rem] rounded-full bg-[#dce7ff] opacity-70 blur-3xl dark:bg-[#13234c]" /><motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .55 }} className="relative max-w-4xl"><p className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#bfd0ff] bg-[#edf3ff] px-3.5 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[#1950E4] dark:border-[#3557a5] dark:bg-[#101a31]">🤖 AI-Powered Payment Operations</p><h1 className="text-5xl font-bold leading-[1.03] tracking-[-0.06em] sm:text-7xl lg:text-[6.2rem]">Turn Failed Payments into <span className="text-[#1950E4]">Recovered Revenue.</span></h1><p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-500 dark:text-zinc-400">RecoverAI automatically detects payment failures, selects the optimal recovery strategy, and executes it in real time—complete with a 100% transparent audit trail for every decision.</p><div className="mt-10 flex flex-col gap-3 sm:flex-row"><a href="#sandbox" className="group inline-flex h-13 items-center justify-center gap-2 rounded-xl bg-[#1950E4] px-6 text-sm font-bold text-white shadow-[0_12px_30px_rgba(25,80,228,.2)] transition-all hover:-translate-y-0.5 hover:scale-[1.02] hover:bg-[#123fb9] active:scale-[.98]">Launch Interactive Demo <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" /></a><a href="#think" className="inline-flex h-13 items-center justify-center gap-2 rounded-xl border border-zinc-300 bg-white px-6 text-sm font-bold text-zinc-700 transition hover:border-[#1950E4] hover:text-[#1950E4] active:scale-[.98] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200">See How It Works <ArrowRight size={17} /></a></div></motion.div></section><AIThinkSplitScreen /><BentoFeatures /><ROIComparison /><SandboxControl /></main><footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950"><div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-8 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"><span className="font-bold text-zinc-900 dark:text-zinc-100">RecoverAI</span><span>Autonomous payment operations, made explainable.</span></div></footer></div></div>;
 }

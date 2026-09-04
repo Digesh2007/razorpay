@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Activity, ArrowUpRight, ShieldCheck } from "lucide-react";
+import { Activity, ShieldCheck } from "lucide-react";
 
 export function SiteHeader() {
   return (
@@ -21,9 +21,6 @@ export function SiteHeader() {
             <Link href="/analytics" className="transition-colors hover:text-[#b8f36b]">Analytics</Link>
             <Link href="/settings" className="transition-colors hover:text-[#b8f36b]">Settings</Link>
           </nav>
-          <Link href="/#overview" className="group flex items-center gap-1.5 text-white transition-colors hover:text-[#b8f36b]">
-            Overview <ArrowUpRight size={14} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-          </Link>
         </div>
       </div>
     </header>

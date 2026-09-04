@@ -1,5 +1,5 @@
 import { Inbox } from "lucide-react";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Table, TableBody, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { TransactionRow, type TransactionRowData } from "@/components/transactions/transaction-row";
 
 export function TransactionTable({ transactions }: { transactions: TransactionRowData[] }) {

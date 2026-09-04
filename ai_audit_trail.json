@@ -1,0 +1,1502 @@
+[
+  {
+    "txn_id": "txn_000001",
+    "amount": 18543.54,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:50.595523"
+  },
+  {
+    "txn_id": "txn_000002",
+    "amount": 5856.63,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:50.754247"
+  },
+  {
+    "txn_id": "txn_000003",
+    "amount": 5900.8,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:50.938000"
+  },
+  {
+    "txn_id": "txn_000004",
+    "amount": 8836.14,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 8836.14,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:51.092810"
+  },
+  {
+    "txn_id": "txn_000005",
+    "amount": 127200.41,
+    "failure_reason": "WALLET_LIMIT_EXCEEDED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:51.267156"
+  },
+  {
+    "txn_id": "txn_000006",
+    "amount": 9774.09,
+    "failure_reason": "NETBANKING_ERROR",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:51.434519"
+  },
+  {
+    "txn_id": "txn_000007",
+    "amount": 17762.01,
+    "failure_reason": "NETBANKING_ERROR",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:51.591147"
+  },
+  {
+    "txn_id": "txn_000008",
+    "amount": 2974.54,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 2974.54,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:51.774152"
+  },
+  {
+    "txn_id": "txn_000009",
+    "amount": 40413.18,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:51.929480"
+  },
+  {
+    "txn_id": "txn_000010",
+    "amount": 69607.9,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:52.332785"
+  },
+  {
+    "txn_id": "txn_000011",
+    "amount": 116511.99,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 116511.99,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:52.608933"
+  },
+  {
+    "txn_id": "txn_000012",
+    "amount": 23601.29,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 23601.29,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:52.821219"
+  },
+  {
+    "txn_id": "txn_000013",
+    "amount": 4000.35,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:53.018354"
+  },
+  {
+    "txn_id": "txn_000014",
+    "amount": 87738.17,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 87738.17,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:53.216353"
+  },
+  {
+    "txn_id": "txn_000015",
+    "amount": 21597.02,
+    "failure_reason": "WALLET_FAILURE",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:53.731314"
+  },
+  {
+    "txn_id": "txn_000016",
+    "amount": 15099.27,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 15099.27,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:54.057192"
+  },
+  {
+    "txn_id": "txn_000017",
+    "amount": 3306.52,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:54.206740"
+  },
+  {
+    "txn_id": "txn_000018",
+    "amount": 11616.23,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:54.376210"
+  },
+  {
+    "txn_id": "txn_000019",
+    "amount": 21827.7,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 21827.7,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:54.583789"
+  },
+  {
+    "txn_id": "txn_000020",
+    "amount": 81137.17,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:54.743325"
+  },
+  {
+    "txn_id": "txn_000021",
+    "amount": 22028.69,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:54.956001"
+  },
+  {
+    "txn_id": "txn_000022",
+    "amount": 20492.57,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:55.125099"
+  },
+  {
+    "txn_id": "txn_000023",
+    "amount": 13428.01,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 13428.01,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:55.334077"
+  },
+  {
+    "txn_id": "txn_000024",
+    "amount": 16422.01,
+    "failure_reason": "WALLET_FAILURE",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 16422.01,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:55.490326"
+  },
+  {
+    "txn_id": "txn_000025",
+    "amount": 88452.15,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:55.715339"
+  },
+  {
+    "txn_id": "txn_000026",
+    "amount": 22682.79,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 22682.79,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:55.934579"
+  },
+  {
+    "txn_id": "txn_000027",
+    "amount": 18222.14,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:56.594307"
+  },
+  {
+    "txn_id": "txn_000028",
+    "amount": 16645.08,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:56.794150"
+  },
+  {
+    "txn_id": "txn_000029",
+    "amount": 15213.47,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:57.101741"
+  },
+  {
+    "txn_id": "txn_000030",
+    "amount": 21457.25,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:57.576974"
+  },
+  {
+    "txn_id": "txn_000031",
+    "amount": 2898.76,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:58.025905"
+  },
+  {
+    "txn_id": "txn_000032",
+    "amount": 10457.14,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:58.224234"
+  },
+  {
+    "txn_id": "txn_000033",
+    "amount": 40147.86,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 40147.86,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:58.469996"
+  },
+  {
+    "txn_id": "txn_000034",
+    "amount": 12423.45,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:58.677612"
+  },
+  {
+    "txn_id": "txn_000035",
+    "amount": 8183.32,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:58.826368"
+  },
+  {
+    "txn_id": "txn_000036",
+    "amount": 127775.71,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 4,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 127775.71,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:59.033160"
+  },
+  {
+    "txn_id": "txn_000037",
+    "amount": 6532.28,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:59.204035"
+  },
+  {
+    "txn_id": "txn_000038",
+    "amount": 23400.3,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 23400.3,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:59.381858"
+  },
+  {
+    "txn_id": "txn_000039",
+    "amount": 45349.56,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 45349.56,
+    "success": true,
+    "timestamp": "2026-08-27T10:18:59.563896"
+  },
+  {
+    "txn_id": "txn_000040",
+    "amount": 149416.42,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:59.744663"
+  },
+  {
+    "txn_id": "txn_000041",
+    "amount": 131950.9,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:18:59.935990"
+  },
+  {
+    "txn_id": "txn_000042",
+    "amount": 16522.42,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:00.230735"
+  },
+  {
+    "txn_id": "txn_000043",
+    "amount": 3790.13,
+    "failure_reason": "BANK_DECLINED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 3790.13,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:00.587329"
+  },
+  {
+    "txn_id": "txn_000044",
+    "amount": 107783.02,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:01.045903"
+  },
+  {
+    "txn_id": "txn_000045",
+    "amount": 21229.54,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:01.350076"
+  },
+  {
+    "txn_id": "txn_000046",
+    "amount": 95748.45,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:01.713834"
+  },
+  {
+    "txn_id": "txn_000047",
+    "amount": 2343.47,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:01.966752"
+  },
+  {
+    "txn_id": "txn_000048",
+    "amount": 11029.77,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:02.117883"
+  },
+  {
+    "txn_id": "txn_000049",
+    "amount": 16839.87,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:02.300537"
+  },
+  {
+    "txn_id": "txn_000050",
+    "amount": 23282.08,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 23282.08,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:02.470661"
+  },
+  {
+    "txn_id": "txn_000051",
+    "amount": 117466.78,
+    "failure_reason": "BANK_DECLINED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:02.628868"
+  },
+  {
+    "txn_id": "txn_000052",
+    "amount": 17681.32,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:02.794707"
+  },
+  {
+    "txn_id": "txn_000053",
+    "amount": 52773.93,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:02.959287"
+  },
+  {
+    "txn_id": "txn_000054",
+    "amount": 24188.78,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:03.117052"
+  },
+  {
+    "txn_id": "txn_000055",
+    "amount": 23511.31,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:03.269373"
+  },
+  {
+    "txn_id": "txn_000056",
+    "amount": 3155.86,
+    "failure_reason": "WALLET_FAILURE",
+    "attempts_so_far": 4,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:03.432833"
+  },
+  {
+    "txn_id": "txn_000057",
+    "amount": 9937.29,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 4,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:03.599862"
+  },
+  {
+    "txn_id": "txn_000058",
+    "amount": 13692.07,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 13692.07,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:03.749951"
+  },
+  {
+    "txn_id": "txn_000059",
+    "amount": 23058.89,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 23058.89,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:03.914886"
+  },
+  {
+    "txn_id": "txn_000060",
+    "amount": 16838.88,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 16838.88,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:04.056793"
+  },
+  {
+    "txn_id": "txn_000061",
+    "amount": 57182.22,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:04.260438"
+  },
+  {
+    "txn_id": "txn_000062",
+    "amount": 7944.94,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 7944.94,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:04.788358"
+  },
+  {
+    "txn_id": "txn_000063",
+    "amount": 17052.87,
+    "failure_reason": "NETBANKING_ERROR",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 17052.87,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:05.149644"
+  },
+  {
+    "txn_id": "txn_000064",
+    "amount": 99746.15,
+    "failure_reason": "NETBANKING_ERROR",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:05.606180"
+  },
+  {
+    "txn_id": "txn_000065",
+    "amount": 4110.17,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:06.091769"
+  },
+  {
+    "txn_id": "txn_000066",
+    "amount": 5263.66,
+    "failure_reason": "WALLET_FAILURE",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 5263.66,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:06.426743"
+  },
+  {
+    "txn_id": "txn_000067",
+    "amount": 112769.19,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:06.723294"
+  },
+  {
+    "txn_id": "txn_000068",
+    "amount": 1730.35,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:07.063736"
+  },
+  {
+    "txn_id": "txn_000069",
+    "amount": 148189.92,
+    "failure_reason": "BANK_DECLINED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 148189.92,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:07.370833"
+  },
+  {
+    "txn_id": "txn_000070",
+    "amount": 10955.15,
+    "failure_reason": "WALLET_LIMIT_EXCEEDED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 10955.15,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:07.574064"
+  },
+  {
+    "txn_id": "txn_000071",
+    "amount": 6557.37,
+    "failure_reason": "NETBANKING_ERROR",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:07.976819"
+  },
+  {
+    "txn_id": "txn_000072",
+    "amount": 2398.34,
+    "failure_reason": "NETBANKING_ERROR",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:08.154037"
+  },
+  {
+    "txn_id": "txn_000073",
+    "amount": 6165.91,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:08.565303"
+  },
+  {
+    "txn_id": "txn_000074",
+    "amount": 10686.47,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:08.797691"
+  },
+  {
+    "txn_id": "txn_000075",
+    "amount": 19257.07,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:09.172750"
+  },
+  {
+    "txn_id": "txn_000076",
+    "amount": 23859.04,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:09.598288"
+  },
+  {
+    "txn_id": "txn_000077",
+    "amount": 5875.83,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:09.766895"
+  },
+  {
+    "txn_id": "txn_000078",
+    "amount": 4543.6,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:10.081729"
+  },
+  {
+    "txn_id": "txn_000079",
+    "amount": 14327.6,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 14327.6,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:10.247105"
+  },
+  {
+    "txn_id": "txn_000080",
+    "amount": 9788.04,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 9788.04,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:10.414349"
+  },
+  {
+    "txn_id": "txn_000081",
+    "amount": 38214.59,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 4,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:10.570414"
+  },
+  {
+    "txn_id": "txn_000082",
+    "amount": 97696.54,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 4,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:10.743339"
+  },
+  {
+    "txn_id": "txn_000083",
+    "amount": 36162.47,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:10.874739"
+  },
+  {
+    "txn_id": "txn_000084",
+    "amount": 4610.83,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:11.058508"
+  },
+  {
+    "txn_id": "txn_000085",
+    "amount": 23257.74,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 23257.74,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:11.202327"
+  },
+  {
+    "txn_id": "txn_000086",
+    "amount": 15006.4,
+    "failure_reason": "WALLET_LIMIT_EXCEEDED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:11.367477"
+  },
+  {
+    "txn_id": "txn_000087",
+    "amount": 20007.57,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:11.563054"
+  },
+  {
+    "txn_id": "txn_000088",
+    "amount": 16364.81,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 16364.81,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:11.688780"
+  },
+  {
+    "txn_id": "txn_000089",
+    "amount": 133790.46,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 4,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 133790.46,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:11.880494"
+  },
+  {
+    "txn_id": "txn_000090",
+    "amount": 15589.85,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 4,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:12.007176"
+  },
+  {
+    "txn_id": "txn_000091",
+    "amount": 21366.97,
+    "failure_reason": "UPI_TIMEOUT",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:12.372552"
+  },
+  {
+    "txn_id": "txn_000092",
+    "amount": 9785.24,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:12.603483"
+  },
+  {
+    "txn_id": "txn_000093",
+    "amount": 8838.3,
+    "failure_reason": "BANK_TIMEOUT",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:12.982795"
+  },
+  {
+    "txn_id": "txn_000094",
+    "amount": 36582.73,
+    "failure_reason": "NETBANKING_ERROR",
+    "attempts_so_far": 3,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:13.390241"
+  },
+  {
+    "txn_id": "txn_000095",
+    "amount": 11480.28,
+    "failure_reason": "UPI_FAILURE",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:13.649983"
+  },
+  {
+    "txn_id": "txn_000096",
+    "amount": 9541.0,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:14.100571"
+  },
+  {
+    "txn_id": "txn_000097",
+    "amount": 7137.45,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "attempts_so_far": 1,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:14.514183"
+  },
+  {
+    "txn_id": "txn_000098",
+    "amount": 19173.65,
+    "failure_reason": "CARD_DECLINED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 19173.65,
+    "success": true,
+    "timestamp": "2026-08-27T10:19:15.036638"
+  },
+  {
+    "txn_id": "txn_000099",
+    "amount": 78933.21,
+    "failure_reason": "CARD_EXPIRED",
+    "attempts_so_far": 2,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:15.250917"
+  },
+  {
+    "txn_id": "txn_000100",
+    "amount": 106348.76,
+    "failure_reason": "BANK_DECLINED",
+    "attempts_so_far": 0,
+    "ai_decision": {
+      "action": "escalate_to_human",
+      "reasoning": "LLM error: 404 models/gemini-1.5-flash is not found for API v",
+      "estimated_success_prob": 0.0,
+      "priority": "high"
+    },
+    "recovered": 0,
+    "success": false,
+    "timestamp": "2026-08-27T10:19:15.561398"
+  }
+]

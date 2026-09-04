@@ -1,0 +1,802 @@
+[
+  {
+    "txn_id": "txn_000001",
+    "amount": 18543.54,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000002",
+    "amount": 5856.63,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000003",
+    "amount": 5900.8,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 5900.8,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000004",
+    "amount": 8836.14,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000005",
+    "amount": 127200.41,
+    "reason": "WALLET_LIMIT_EXCEEDED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000006",
+    "amount": 9774.09,
+    "reason": "NETBANKING_ERROR",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000007",
+    "amount": 17762.01,
+    "reason": "NETBANKING_ERROR",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000008",
+    "amount": 2974.54,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000009",
+    "amount": 40413.18,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 40413.18,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000010",
+    "amount": 69607.9,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000011",
+    "amount": 116511.99,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000012",
+    "amount": 23601.29,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000013",
+    "amount": 4000.35,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000014",
+    "amount": 87738.17,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000015",
+    "amount": 21597.02,
+    "reason": "WALLET_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 21597.02,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000016",
+    "amount": 15099.27,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000017",
+    "amount": 3306.52,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 3306.52,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000018",
+    "amount": 11616.23,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000019",
+    "amount": 21827.7,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000020",
+    "amount": 81137.17,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000021",
+    "amount": 22028.69,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000022",
+    "amount": 20492.57,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 20492.57,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000023",
+    "amount": 13428.01,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 13428.01,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000024",
+    "amount": 16422.01,
+    "reason": "WALLET_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000025",
+    "amount": 88452.15,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000026",
+    "amount": 22682.79,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000027",
+    "amount": 18222.14,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000028",
+    "amount": 16645.08,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000029",
+    "amount": 15213.47,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000030",
+    "amount": 21457.25,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000031",
+    "amount": 2898.76,
+    "reason": "UPI_FAILURE",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000032",
+    "amount": 10457.14,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000033",
+    "amount": 40147.86,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000034",
+    "amount": 12423.45,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000035",
+    "amount": 8183.32,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000036",
+    "amount": 127775.71,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000037",
+    "amount": 6532.28,
+    "reason": "CARD_DECLINED",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000038",
+    "amount": 23400.3,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000039",
+    "amount": 45349.56,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000040",
+    "amount": 149416.42,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000041",
+    "amount": 131950.9,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000042",
+    "amount": 16522.42,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000043",
+    "amount": 3790.13,
+    "reason": "BANK_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 3790.13,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000044",
+    "amount": 107783.02,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000045",
+    "amount": 21229.54,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000046",
+    "amount": 95748.45,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000047",
+    "amount": 2343.47,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000048",
+    "amount": 11029.77,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 11029.77,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000049",
+    "amount": 16839.87,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 16839.87,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000050",
+    "amount": 23282.08,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000051",
+    "amount": 117466.78,
+    "reason": "BANK_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 117466.78,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000052",
+    "amount": 17681.32,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 17681.32,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000053",
+    "amount": 52773.93,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000054",
+    "amount": 24188.78,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000055",
+    "amount": 23511.31,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000056",
+    "amount": 3155.86,
+    "reason": "WALLET_FAILURE",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000057",
+    "amount": 9937.29,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000058",
+    "amount": 13692.07,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000059",
+    "amount": 23058.89,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000060",
+    "amount": 16838.88,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 16838.88,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000061",
+    "amount": 57182.22,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000062",
+    "amount": 7944.94,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000063",
+    "amount": 17052.87,
+    "reason": "NETBANKING_ERROR",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000064",
+    "amount": 99746.15,
+    "reason": "NETBANKING_ERROR",
+    "action_taken": "blind_retry",
+    "recovered": 99746.15,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000065",
+    "amount": 4110.17,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 4110.17,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000066",
+    "amount": 5263.66,
+    "reason": "WALLET_FAILURE",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000067",
+    "amount": 112769.19,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000068",
+    "amount": 1730.35,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000069",
+    "amount": 148189.92,
+    "reason": "BANK_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000070",
+    "amount": 10955.15,
+    "reason": "WALLET_LIMIT_EXCEEDED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000071",
+    "amount": 6557.37,
+    "reason": "NETBANKING_ERROR",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000072",
+    "amount": 2398.34,
+    "reason": "NETBANKING_ERROR",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000073",
+    "amount": 6165.91,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000074",
+    "amount": 10686.47,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000075",
+    "amount": 19257.07,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000076",
+    "amount": 23859.04,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000077",
+    "amount": 5875.83,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000078",
+    "amount": 4543.6,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000079",
+    "amount": 14327.6,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000080",
+    "amount": 9788.04,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000081",
+    "amount": 38214.59,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000082",
+    "amount": 97696.54,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000083",
+    "amount": 36162.47,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000084",
+    "amount": 4610.83,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000085",
+    "amount": 23257.74,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000086",
+    "amount": 15006.4,
+    "reason": "WALLET_LIMIT_EXCEEDED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000087",
+    "amount": 20007.57,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000088",
+    "amount": 16364.81,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000089",
+    "amount": 133790.46,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000090",
+    "amount": 15589.85,
+    "reason": "CARD_DECLINED",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000091",
+    "amount": 21366.97,
+    "reason": "UPI_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 21366.97,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000092",
+    "amount": 9785.24,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000093",
+    "amount": 8838.3,
+    "reason": "BANK_TIMEOUT",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000094",
+    "amount": 36582.73,
+    "reason": "NETBANKING_ERROR",
+    "action_taken": "stop_no_more_retries",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000095",
+    "amount": 11480.28,
+    "reason": "UPI_FAILURE",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000096",
+    "amount": 9541.0,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 9541.0,
+    "success": true
+  },
+  {
+    "txn_id": "txn_000097",
+    "amount": 7137.45,
+    "reason": "INSUFFICIENT_FUNDS",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000098",
+    "amount": 19173.65,
+    "reason": "CARD_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000099",
+    "amount": 78933.21,
+    "reason": "CARD_EXPIRED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  },
+  {
+    "txn_id": "txn_000100",
+    "amount": 106348.76,
+    "reason": "BANK_DECLINED",
+    "action_taken": "blind_retry",
+    "recovered": 0,
+    "success": false
+  }
+]
